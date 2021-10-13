@@ -40,4 +40,4 @@ public class GBHomework2 {
             return false;
         }else return false;
     }
-}
+}//Второе домашнее задание
