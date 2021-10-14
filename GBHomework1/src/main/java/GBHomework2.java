@@ -22,9 +22,8 @@ public class GBHomework2 {
     }
 
     public static boolean positiveOrNegativeNumber(int boolNumber){
-        if(boolNumber < 0){
-            return true;
-        }else return false;
+        return boolNumber < 0;
+
     }
 
     public static void stringNumberTimes(String string, int numberOfStrings){
