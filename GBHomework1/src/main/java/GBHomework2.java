@@ -4,7 +4,8 @@ public class GBHomework2 {
         System.out.println(isNumberInteger(2));
         System.out.println(positiveOrNegativeNumber(6));
         stringNumberTimes("Hello GB", 6);
-        System.out.println(isLeapYear(3));
+        System.out.println(isLeapYear(2015));
+
     }
 
     public static boolean isNumberInRange(int a, int b){
@@ -16,7 +17,7 @@ public class GBHomework2 {
     }
 
     public static String isNumberInteger(int number){
-        if(number % 2 == 0){
+        if(number > 0){
             return "Положительное число";
         }else return "Отрицательное число";
     }
@@ -33,7 +34,7 @@ public class GBHomework2 {
     }
 
     public static boolean isLeapYear(int year){
-        if(year % 4 == 0 && year % 400 == 0){
+        if(year % 4 == 0 || year % 400 == 0){
             return true;
         }else if(year % 100 == 0){
             return false;
