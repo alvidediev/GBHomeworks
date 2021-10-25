@@ -1,4 +1,4 @@
-package GBHomework4;
+package GBHomework5;
 
 public class Employee {
     private String fullName = "";
