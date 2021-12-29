@@ -1,4 +1,4 @@
-package GBHomework5;
+package GBLVL1.GBHomework5;
 
 public class EmployeeArray {
     public static void main(String[] args) {

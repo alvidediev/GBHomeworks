@@ -1,4 +1,4 @@
-package GBHomework6;
+package GBLVL1.GBHomework6;
 
 public class Animal {
     private static int COUNTER = 0;

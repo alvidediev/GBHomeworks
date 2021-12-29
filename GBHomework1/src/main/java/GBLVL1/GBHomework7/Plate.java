@@ -1,4 +1,4 @@
-package GBHomework7;
+package GBLVL1.GBHomework7;
 
 public class Plate {
     private int food;
