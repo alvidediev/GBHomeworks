@@ -1,4 +1,4 @@
-package GBHomework6;
+package GBLVL1.GBHomework6;
 
 public class Dog extends Animal {
     private static int COUNTER = 0;

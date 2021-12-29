@@ -1,4 +1,4 @@
-package GBHomework6;
+package GBLVL1.GBHomework6;
 
 public class Test {
     public static void main(String[] args) {

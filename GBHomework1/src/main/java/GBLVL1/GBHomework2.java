@@ -1,3 +1,5 @@
+package GBLVL1;
+
 public class GBHomework2 {
     public static void main(String[] args) {
         System.out.println(isNumberInRange(4, 15));
