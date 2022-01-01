@@ -1,4 +1,4 @@
-package GBLVL2.HomeWork1;
+package GBLVL2.Homework1;
 
 public class AppRunner {
     public static void main(String[] args) {

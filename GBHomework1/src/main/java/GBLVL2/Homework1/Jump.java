@@ -1,4 +1,4 @@
-package GBLVL2.HomeWork1;
+package GBLVL2.Homework1;
 
 public interface Jump {
     int jump();

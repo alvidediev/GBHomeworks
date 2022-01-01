@@ -1,4 +1,4 @@
-package GBLVL2.HomeWork1;
+package GBLVL2.Homework1;
 
 public class Threadmill implements CheckCours {
     private final int THREADMILL_RUN_COURSE = 1000;
