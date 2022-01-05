@@ -1,19 +1,14 @@
-package GBLVL2.HomeWork1;
+package GBLVL2.Homework1;
 
-public class Cat implements RunnableAndJumpable{
+public class Robot implements RunnableAndJumpable{
     private String name;
     private int runDistance;
     private int jumpHeight;
 
-    public Cat(String name, int runDistance, int jumpHeight) {
+    public Robot(String name, int runDistance, int jumpHeight) {
         this.name = name;
         this.runDistance = runDistance;
         this.jumpHeight = jumpHeight;
-    }
-
-    @Override
-    public String toString() {
-        return name;
     }
 
     @Override
@@ -24,5 +19,10 @@ public class Cat implements RunnableAndJumpable{
     @Override
     public int run() {
         return runDistance;
+    }
+
+    @Override
+    public String toString() {
+        return name;
     }
 }
