@@ -9,9 +9,15 @@ public class UniqueWords {
         for (int i = 0; i < 20; i++) {
             listOfWords.add(uniqueWords.randomWord());
         }
+        System.out.println("Список слов в массиве: ");
         System.out.println(listOfWords);
         Set<String> unique = new LinkedHashSet<>(listOfWords);
+        System.out.println("Список уникальный слов в массиве: ");
         System.out.println(unique);
+        System.out.println("Сколько раз встречается каждое слово в массиве: ");
+        for (String key : unique) {
+            System.out.println(key + ": " + Collections.frequency(listOfWords, key) + " раза.");
+        }
     }
 
     private String randomWord() {
