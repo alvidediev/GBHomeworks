@@ -28,6 +28,7 @@ public class ThreadLesson extends Thread {
     private synchronized void secondMethod(float[] arr) {
         float[] arr1 = new float[size];
         float[] arr2 = new float[size];
+
         Thread thread1 = new Thread(() -> {
             long currentTimeMillis = System.currentTimeMillis();
             System.arraycopy(arr, 0, arr1, 0, h);
@@ -43,8 +44,8 @@ public class ThreadLesson extends Thread {
             }
             System.currentTimeMillis();
             System.out.println("Время просчета первой половины массива " + (System.currentTimeMillis() - crntTimeForThrd1));
-
         });
+
         Thread thread2 = new Thread(() -> {
             long currentTimeMillis = System.currentTimeMillis();
             for (int i = 0; i < arr2.length; i++) {
@@ -63,13 +64,9 @@ public class ThreadLesson extends Thread {
         });
 
         thread1.start();
-        try {
-            thread1.join();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
         thread2.start();
         try {
+            thread1.join();
             thread2.join();
         } catch (InterruptedException e) {
             e.printStackTrace();
