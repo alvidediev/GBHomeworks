@@ -11,9 +11,28 @@ public class Server {
     private Socket socket;
     private DataInputStream in;
     private DataOutputStream out;
-    private Scanner scanner;
+    private Scanner scanner = new Scanner(System.in);
+
+
+
     public static void main(String[] args) {
         new Server().start();
+    }
+
+    Server(){
+        start();
+        scanner = new Scanner(System.in);
+        while (true){
+            try {
+                out.writeUTF(scanner.nextLine());
+                if("/end".equalsIgnoreCase(scanner.nextLine())){
+                    closeConnection();
+                    break;
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     private void start() {
@@ -33,7 +52,6 @@ public class Server {
                             break;
                         }
                         System.out.println("Клиент прислал сообщение: " + message);
-                        out.writeUTF(scanner.nextLine());
                     }
                 }catch (Exception e){
                     e.printStackTrace();
