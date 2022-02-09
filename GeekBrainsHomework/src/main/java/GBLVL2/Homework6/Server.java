@@ -11,12 +11,12 @@ public class Server {
     private Socket socket;
     private DataInputStream in;
     private DataOutputStream out;
-    private Scanner scanner = new Scanner(System.in);
+    private Scanner scanner;
 
 
 
     public static void main(String[] args) {
-        new Server().start();
+        new Server();
     }
 
     Server(){
