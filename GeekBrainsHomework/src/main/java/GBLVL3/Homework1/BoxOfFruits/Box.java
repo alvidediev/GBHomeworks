@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Box<T extends Fruit> {
+public class Box<T extends Fruit> implements Comparable<Box> {
     List<T> fruits;
 
     //Коробка ArrayList
@@ -37,5 +37,10 @@ public class Box<T extends Fruit> {
     //добавить фрукты в корзину
     public void addFruits(T fruit){
         fruits.add(fruit);
+    }
+    //Попытка переопределить метод Сompare
+    @Override
+    public int compareTo(Box o) {
+        return Float.compare(getWeight(), o.getWeight());
     }
 }

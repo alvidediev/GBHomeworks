@@ -26,6 +26,8 @@ public class FruitBoxesRunner {
         orangeBox.replaceFruitsToAnotherBox(anotherOrangeBox);
         System.out.println(anotherOrangeBox.getWeight());
         anotherOrangeBox.replaceFruitsToAnotherBox(emptyOrangeBox);
+        //тест метода compareTo
+        System.out.println(orangeBox.compareTo(appleBox));
     }
 
 }
